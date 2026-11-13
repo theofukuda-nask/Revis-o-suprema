@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RevS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site institucional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
+  <nav>
+    <a class="nav-item" href="../Home">
+      <img class="nav-icon" src="../assets/icons/home.png" alt="">
+      <p>Home</p>
+    </a>
+    <a class="nav-item" href="../Institution">
+      <img class="nav-icon" src="../assets/icons/home.png" alt="">
+      <p>Instituição</p>
+    </a>
+    <a class="nav-item" href="../Products">
+      <img class="nav-icon" src="../assets/icons/home.png" alt="">
+      <p>Produtos</p>
+    </a>
+    <a class="nav-item" href="../Contact">
+      <img class="nav-icon" src="../assets/icons/home.png" alt="">
+      <p>Contato</p>
+    </a>
+  </nav>
 
-            <a class="nav-item" href="">
-            <img class="nav-icon" src="../Assets/Icons/home.png" alt="">
-            <p>Home</p>
-            </a>
+  <div id="wrap-open" class="wrap-open" onclick="openMenu()">
+    <img src="../assets/icons/menus.png" alt="menu">
+  </div>
 
-             <a class="nav-item" href="">
-            <img class="nav-icon" src="../Assets/Icons/home.png" alt="">
-            <p>Assistente</p>
-            </a>
+  <div id="menu-mobile">
+    <img onclick="fechar()" src="../assets/icons/cross.png" alt="X">
+    <a href="../Home">Home</a>
+    <a href="../Institution">Instituição</a>
+    <a href="../Products">Produtos</a>
+    <a href="../Contact">Contato</a>
+  </div>
 
-             <a class="nav-item" href="">
-            <img class="nav-icon" src="../Assets/Icons/home.png" alt="">
-            <p>Loja</p>
-            </a>
+  <section class="s1">
+    <div class="wrap-divs">
+      <div class="title-div">
+        <h1>Nerd coming</h1>
+      </div>
+      <div class="wrap-btns">
+        <button onclick="irParaContato()">Contato</button>
+        <button onclick="irParaBaixo()">Ir para o site</button>
+      </div>
+    </div>
+  </section>
 
-             <a class="nav-item" href="">
-            <img class="nav-icon" src="../Assets/Icons/home.png" alt="">
-            <p>Carrinho</p>
-            </a>
-
-             <a class="nav-item" href="">
-            <img class="nav-icon" src="../Assets/Icons/home.png" alt="">
-            <p>Conta</p>
-            </a>
-
-    </nav>
-
-    <div class="wrap-open">
-
-        <img src="../Assets/Icons/menus.png" alt="menu">
-
+  <section class="s2" id="s2">
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card01.jpeg" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Espada estranha 01</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ab!</p>
+      </div>
     </div>
 
-    <div id="menu-mobile">
-        <img onclick="fechar()" id="fechado" src="../Assets/Icons/cross.png" alt="">
-        <a href="">Home</a>
-        <a href="">Assistente</a>
-        <a href="">Loja</a>
-        <a href="">Carrinho</a>
-        <a href="">Conta</a>
-
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card02.jpg" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Espada foda 02</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, animi.</p>
+      </div>
     </div>
 
-     <section class="s1">
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card03.jpg" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Espada 03</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, perferendis!</p>
+      </div>
+    </div>
+  </section>
 
-
-            </section>
-
-            <section class="s2">
-
-
-            </section>
+  <script src="script.js"></script>
 </body>
 
-<script src="script.js"></script>
 </html>

@@ -1,14 +1,26 @@
 function openMenu(){
-    var abrirMenu = document.getElementById('wrap-open')
-    console.log(abrirMenu)
+    var abrirMenu = document.getElementById('menu-mobile')
     abrirMenu.style.display = 'flex'
-    var sand = document.getElementById('wrap-open')
-    sand.style.display = 'none'
+    var sanduiche = document.getElementById('wrap-open')
+    sanduiche.style.display = 'none'
 }
 
 function fechar(){
-    var sand = document.getElementById('menu-mobile')
-    abrirMenu.style.display = "none"
-    var sand = document.getElementById('menu-mobile')
-    sand.style.display = 'flex'
+    var abrirMenu = document.getElementById('menu-mobile')
+    abrirMenu.style.display = 'none'
+    var sanduiche = document.getElementById('wrap-open')
+    sanduiche.style.display = 'flex'
 }
+
+function irParaBaixo(){
+   window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+   }) 
+}
+
+function irParaContato(){
+    window.location.href = "../Contact"
+}
+
+//  const irParaContato = () => window.location.href = "../Contact"
